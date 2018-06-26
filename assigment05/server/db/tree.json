@@ -1,0 +1,38 @@
+[
+  {
+    "type": "group",
+    "name": "Friends",
+    "id": 1,
+    "messages": [],
+    "items": [
+      {
+        "type": "group",
+        "name": "Best Friends",
+        "id":  2,
+        "messages": [{"time": "10:00", "message": "msg1", "sender": "ravid"},{"time": "10:02", "message": "msg2", "sender": "orel"},{"time": "10:05", "message": "msg3", "sender": "ravid"}],
+        "items": [
+          {
+            "type": "user",
+            "name": "Tommy",
+            "messages": []
+          }
+        ]
+      },
+      {
+        "type": "user",
+        "name": "Udi",
+        "messages": []
+      }
+    ]
+  },
+  {
+    "type": "user",
+    "name": "Ori",
+    "messages": []
+  },
+  {
+    "type": "user",
+    "name": "Roni",
+    "messages": []
+  }
+]

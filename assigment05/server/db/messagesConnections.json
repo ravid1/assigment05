@@ -1,0 +1,16 @@
+{
+  "groupsToMessages":
+    {
+      "1": [
+        "m1",
+        "m2"
+      ]
+    },
+  "usersToMessages":
+    {
+      "2": [
+        "m1",
+        "m2"
+      ]
+    }
+}

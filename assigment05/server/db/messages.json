@@ -1,0 +1,6 @@
+[
+  {"id":1, "sender": "ravid", "receiver": "orel", "content": "you Gay", "time": "20:00"},
+  {"id":2, "sender": "orel", "receiver": "ravid", "content": "you Gay to", "time": "20:01"},
+  {"id":1, "sender": "ravid", "receiver": "orel", "content": "no", "time": "20:02"},
+  {"id":3, "sender": "michael", "receiver": "ravid", "content": "coffee", "time": "21:02"}
+]
