@@ -14,28 +14,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="group.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assigment05/server/model/group.ts">
+      <file leaf-file-name="StateStore.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assigment05/src/stateStore/StateStore.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
-              <folding>
-                <element signature="e#134#163#0" expanded="true" />
-                <element signature="e#603#779#0" />
-                <element signature="e#4400#4568#0" />
-                <element signature="e#4574#5206#0" />
-              </folding>
+            <state relative-caret-position="63">
+              <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assigment05/src/navbar.tsx">
+      <file leaf-file-name="leftPanel.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assigment05/src/components/leftPanel.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+            <state relative-caret-position="310">
+              <caret line="144" column="49" selection-start-line="144" selection-start-column="49" selection-end-line="144" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Api.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assigment05/src/Api.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="n#!!block;n#update#0;n#Api#0" />
               </folding>
             </state>
           </provider>
@@ -44,8 +47,8 @@
       <file leaf-file-name="App.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assigment05/src/App.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-438">
-              <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+            <state relative-caret-position="-818">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -53,23 +56,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Users.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assigment05/src/components/Users.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Groups.tsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Groups.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assigment05/src/components/Groups.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="119">
+              <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assigment05/server/model/User.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="groups.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assigment05/server/services/groups.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="group.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assigment05/server/model/group.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="124" column="24" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
+              <folding>
+                <element signature="e#134#163#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="groups.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assigment05/server/db/groups.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="91" selection-start-column="91" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -77,8 +113,8 @@
       <file leaf-file-name="groupConnections.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assigment05/server/db/groupConnections.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state>
+              <caret column="514" selection-start-column="514" selection-end-column="514" />
             </state>
           </provider>
         </entry>
@@ -89,9 +125,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
-        <option value="CSS File" />
         <option value="TypeScript File" />
         <option value="json File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -99,6 +135,8 @@
     <findStrings>
       <find>node</find>
       <find>'</find>
+      <find>console</find>
+      <find>tree</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -110,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assigment05/src/css/navBar.css" />
         <option value="$PROJECT_DIR$/assigment05/src/Api.tsx" />
         <option value="$PROJECT_DIR$/assigment05/package.json" />
         <option value="$PROJECT_DIR$/assigment05/server/routes/translate.ts" />
@@ -124,9 +161,7 @@
         <option value="$PROJECT_DIR$/assigment05/src/components/pupUp.tsx" />
         <option value="$PROJECT_DIR$/assigment05/tsconfig.json" />
         <option value="$PROJECT_DIR$/assigment05/server/routes/users.ts" />
-        <option value="$PROJECT_DIR$/assigment05/src/components/Users.tsx" />
         <option value="$PROJECT_DIR$/assigment05/server/controllers/users.ts" />
-        <option value="$PROJECT_DIR$/assigment05/src/Api.ts" />
         <option value="$PROJECT_DIR$/assigment05/server/services/users.ts" />
         <option value="$PROJECT_DIR$/assigment05/server/db/db.ts" />
         <option value="$PROJECT_DIR$/assigment05/server/routes/index.ts" />
@@ -142,25 +177,28 @@
         <option value="$PROJECT_DIR$/assigment05/server/db/groupsConnections" />
         <option value="$PROJECT_DIR$/assigment05/server/db/groupsConnections.json" />
         <option value="$PROJECT_DIR$/assigment05/server/routes/groups.ts" />
-        <option value="$PROJECT_DIR$/assigment05/server/services/groups.ts" />
-        <option value="$PROJECT_DIR$/assigment05/server/controllers/groups.ts" />
         <option value="$PROJECT_DIR$/assigment05/server/interfaces.ts" />
         <option value="$PROJECT_DIR$/assigment05/server/services/index.ts" />
         <option value="$PROJECT_DIR$/assigment05/server/controllers/tree.ts" />
         <option value="$PROJECT_DIR$/assigment05/server/db/tree2.json" />
         <option value="$PROJECT_DIR$/assigment05/server/services/tree.ts" />
         <option value="$PROJECT_DIR$/assigment05/server/model/tree.ts" />
+        <option value="$PROJECT_DIR$/assigment05/src/components/Groups" />
+        <option value="$PROJECT_DIR$/assigment05/server/db/groups.json" />
+        <option value="$PROJECT_DIR$/assigment05/server/db/users.json" />
+        <option value="$PROJECT_DIR$/assigment05/src/components/Users.tsx" />
+        <option value="$PROJECT_DIR$/assigment05/server/model/User.ts" />
+        <option value="$PROJECT_DIR$/assigment05/server/controllers/groups.ts" />
+        <option value="$PROJECT_DIR$/assigment05/server/services/groups.ts" />
+        <option value="$PROJECT_DIR$/assigment05/server/db/groupConnections.json" />
+        <option value="$PROJECT_DIR$/assigment05/src/navbar.tsx" />
         <option value="$PROJECT_DIR$/assigment05/src/stateStore/StateStore.ts" />
         <option value="$PROJECT_DIR$/assigment05/src/components/leftPanel.tsx" />
-        <option value="$PROJECT_DIR$/assigment05/server/model/User.ts" />
-        <option value="$PROJECT_DIR$/assigment05/server/db/users.json" />
-        <option value="$PROJECT_DIR$/assigment05/server/db/groupConnections.json" />
-        <option value="$PROJECT_DIR$/assigment05/server/db/groups.json" />
-        <option value="$PROJECT_DIR$/assigment05/server/model/group.ts" />
-        <option value="$PROJECT_DIR$/assigment05/src/components/Groups" />
-        <option value="$PROJECT_DIR$/assigment05/src/navbar.tsx" />
-        <option value="$PROJECT_DIR$/assigment05/src/App.tsx" />
+        <option value="$PROJECT_DIR$/assigment05/src/css/Groups.css" />
+        <option value="$PROJECT_DIR$/assigment05/src/Api.ts" />
         <option value="$PROJECT_DIR$/assigment05/src/components/Groups.tsx" />
+        <option value="$PROJECT_DIR$/assigment05/src/App.tsx" />
+        <option value="$PROJECT_DIR$/assigment05/server/model/group.ts" />
       </list>
     </option>
   </component>
@@ -217,14 +255,21 @@
               <item name="Assigment05" type="b2602c69:ProjectViewProjectNode" />
               <item name="Assigment05" type="462c0819:PsiDirectoryNode" />
               <item name="assigment05" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Assigment05" type="b2602c69:ProjectViewProjectNode" />
               <item name="Assigment05" type="462c0819:PsiDirectoryNode" />
               <item name="assigment05" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assigment05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assigment05" type="462c0819:PsiDirectoryNode" />
+              <item name="assigment05" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -234,7 +279,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tyota" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
@@ -300,7 +345,7 @@
       <workItem from="1529303855362" duration="57938000" />
       <workItem from="1529602611887" duration="24000" />
       <workItem from="1529603039977" duration="68631000" />
-      <workItem from="1529864835154" duration="27569000" />
+      <workItem from="1529864835154" duration="98872000" />
     </task>
     <task id="LOCAL-00001" summary="commit 2">
       <created>1528327272969</created>
@@ -313,11 +358,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276748000" />
+    <option name="totallyTimeSpent" value="348051000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="5" weight="0.3290938" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15959005" />
@@ -396,37 +440,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assigment05/server/routes/translate.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/server/controllers/languages.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/server/services/languages.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/server/services/tree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assigment05/src/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -456,24 +469,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/src/components/pupUp.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assigment05/server/model/User.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/server/routes/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -560,16 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/server/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assigment05/server/app.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -597,13 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/server/routes/groups.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assigment05/server/db/db.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -628,27 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/src/Api.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/src/stateStore/StateStore.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/src/components/leftPanel.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assigment05/server/controllers/tree.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -663,13 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="261" selection-start-column="261" selection-end-column="261" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/server/model/tree.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -690,23 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/server/db/users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="52" selection-start-column="52" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/server/model/User.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="75" column="48" lean-forward="true" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assigment05/server/services/users.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -714,24 +651,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/server/db/groups.json">
+    <entry file="file://$PROJECT_DIR$/assigment05/src/components/Field.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="170">
+          <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/server/db/groupConnections.json">
+    <entry file="file://$PROJECT_DIR$/assigment05/server/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/server/db/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/src/components/Users.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="106" column="41" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/server/model/tree.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/src/components/pupUp.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="57" column="18" selection-start-line="47" selection-start-column="12" selection-end-line="57" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/server/model/group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/server/routes/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/server/routes/groups.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assigment05/server/controllers/groups.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        <state relative-caret-position="278">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -740,61 +735,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assigment05/server/services/groups.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        <state relative-caret-position="242">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/server/model/group.ts">
+    <entry file="file://$PROJECT_DIR$/assigment05/server/db/groupConnections.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
-          <folding>
-            <element signature="e#134#163#0" expanded="true" />
-            <element signature="e#603#779#0" />
-            <element signature="e#4400#4568#0" />
-            <element signature="e#4574#5206#0" />
-          </folding>
+        <state>
+          <caret column="514" selection-start-column="514" selection-end-column="514" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/server/db/groups.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="91" selection-start-column="91" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/src/App.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assigment05/src/navbar.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assigment05/src/components/Users.tsx">
+    <entry file="file://$PROJECT_DIR$/assigment05/src/stateStore/StateStore.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="63">
+          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/src/components/leftPanel.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="144" column="49" selection-start-line="144" selection-start-column="49" selection-end-line="144" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/src/Api.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#Api#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assigment05/src/App.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-438">
-          <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        <state relative-caret-position="-818">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/src/css/Groups.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/assigment05/src/components/Groups.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="119">
+          <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/server/model/User.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment05/server/model/group.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="124" column="24" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
+          <folding>
+            <element signature="e#134#163#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

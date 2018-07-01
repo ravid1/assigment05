@@ -24,6 +24,7 @@ class NavBar extends React.Component {
                             <div className="dropdown-content">
                                 <Link to="/Users">Users</Link>
                                 <Link to="/Groups">Groups</Link>
+                                <Link to="/tree">Chat</Link>
                             </div>
                         </span>
                     </li>

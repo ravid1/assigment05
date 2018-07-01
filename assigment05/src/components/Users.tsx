@@ -1,12 +1,16 @@
 import * as React from 'react';
-import {stateStoreService} from "../stateStore/StateStore";
 import Iuser from "../interfaces/Iuser";
 import PopUp from "./pupUp";
-import {Api} from "../Api";
+// import {stateStoreService} from "../stateStore/StateStore";
 // import {Api} from "../Api";
+
 
 interface Iusers {
     user: string
+    usersList: Iuser[]
+    onUserCreateHandler: (user:any)=> void
+    onUserUpdateHandler: (user: Iuser)=> void
+    onUserDeleteHandler: (user: any)=> void
 }
 
 interface IusersState{
@@ -22,7 +26,7 @@ class Users extends React.Component<Iusers,IusersState>{
         super(props);
 
         this.state = {
-            users: stateStoreService.get('users'),
+            users: this.props.usersList,
             user: null,
             createPopUp: false,
             updatePopUp: false
@@ -44,19 +48,19 @@ class Users extends React.Component<Iusers,IusersState>{
     }
 
     onUserCreateHandler =(user: any)=>{
-        Api.createUser(user)
+        /*Api.createUser(user)
             .then((newUser)=>{
                 console.log(newUser);
 
                 this.setState((prevState => ({
                     users: [...prevState.users, newUser]
                 })));
-            });
+            });*/
+        this.props.onUserCreateHandler(user);
     }
 
     onUserUpdateHandler =(user: Iuser)=>{
-        console.log(user);
-        Api.updateUser(user)
+        /*Api.updateUser(user)
             .then(async (updatedUser) => {
                console.log(updatedUser);
                let index = await this.getIndex(updatedUser.id);
@@ -64,11 +68,12 @@ class Users extends React.Component<Iusers,IusersState>{
                    users: prevState.users.slice(0,index).concat(updatedUser).concat(prevState.users.slice(index+1,prevState.users.length)),
                    user: null
                }));
-            });
+            });*/
+        this.props.onUserUpdateHandler(user);
     }
 
     onUserDeleteHandler =(user: any): any => {
-        console.log(user);
+        /*console.log(user);
         Api.deleteUser(user)
             .then(async (deletedUser) => {
                 console.log(deletedUser);
@@ -77,10 +82,9 @@ class Users extends React.Component<Iusers,IusersState>{
                 this.setState((prevState) => ({
                     users: prevState.users.slice(0,index).concat(prevState.users.slice(index+1,prevState.users.length))
                 }));
-            });
+            });*/
+        this.props.onUserDeleteHandler(user);
     }
-
-
 
     getIndex(id: any): any{
         return new Promise( (resolve) => {
@@ -95,11 +99,12 @@ class Users extends React.Component<Iusers,IusersState>{
     }
 
     public render (){
+        console.log('Users render');
         return(
             <>
                 <button onClick={this.toggleCreatePopUp}>Create New User</button>
                 <ul>
-                    {this.state.users.map(user=>(<li key={user.id}>{user.id}:{user.name} -- {user.age.toString()}<button onClick={this.toggleUpdatePopUp.bind(this,user)}>Update</button><button onClick={this.onUserDeleteHandler.bind(this,user)}>Delete</button></li>))}
+                    {this.props.usersList.map(user=>(<li key={user.id}>{user.id}:{user.name} -- {user.age.toString()}<button onClick={this.toggleUpdatePopUp.bind(this,user)}>Update</button><button onClick={this.onUserDeleteHandler.bind(this,user)}>Delete</button></li>))}
                 </ul>
                 {this.state.createPopUp ?<PopUp togglePopUp={this.toggleCreatePopUp} onSubmitHandler={this.onUserCreateHandler} text="Create User" /> : null}
                 {this.state.updatePopUp ?<PopUp togglePopUp={this.toggleUpdatePopUp} onSubmitHandler={this.onUserUpdateHandler} text="Update User" user={this.state.user} /> : null}

@@ -13,12 +13,20 @@ const group_1 = require("../model/group");
 function getGroups() {
     return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {
         const groups = yield model_1.GroupsModel.getGroups().then(value => {
-            resolve(value);
+            return value;
         });
-        return (groups);
+        resolve(groups);
     }));
 }
 exports.getGroups = getGroups;
+function addGroup(obj) {
+    return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {
+        console.log(obj);
+        const group = new group_1.default(obj.name);
+        yield model_1.GroupsModel.addGroup(group, obj.parentId).then();
+    }));
+}
+exports.addGroup = addGroup;
 function deleteGroup(id) {
     return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {
         const groups = yield model_1.GroupsModel.deleteGroup(id).then(value => {
@@ -28,16 +36,8 @@ function deleteGroup(id) {
     }));
 }
 exports.deleteGroup = deleteGroup;
-function addGroup(obj) {
-    console.log(obj);
-    return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {
-        const group = new group_1.default(obj.name);
-        yield model_1.GroupsModel.addGroup(group, obj.parentId).then();
-    }));
-}
-exports.addGroup = addGroup;
 function addUserToGroup(obj) {
-    console.log(obj);
+    console.log("service");
     return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {
         yield model_1.GroupsModel.addUserToGroup(obj.groupId, obj.userId);
     }));

@@ -5,10 +5,19 @@ export function getGroups() {
 
     return new Promise(async(resolve) => {
         const groups = await GroupsModel.getGroups().then(value => {
-            resolve(value);
+            return value;
         });
-        return (groups);
+        resolve(groups);
     })
+}
+
+export function addGroup(obj){
+
+    return new Promise(async (resolve) => {
+        console.log(obj);
+        const group = new Group(obj.name);
+        await GroupsModel.addGroup(group,obj.parentId).then();
+    });
 }
 
 export function deleteGroup(id: number) {
@@ -21,16 +30,7 @@ export function deleteGroup(id: number) {
     })
 }
 
-export function addGroup(obj){
-    console.log(obj);
-    return new Promise(async (resolve) => {
-        const group = new Group(obj.name);
-        await GroupsModel.addGroup(group,obj.parentId).then();
-    });
-}
-
 export function addUserToGroup(obj){
-    console.log(obj);
     return new Promise(async (resolve) =>{
         await GroupsModel.addUserToGroup(obj.groupId,obj.userId);
     });

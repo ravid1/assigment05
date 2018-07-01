@@ -25,9 +25,21 @@ export default class Group implements Igroup{
 
     static getGroups(){
         return new Promise(async (resolve)=> {
-            await db.getData(this.groupsList).then(value => {
-                resolve(value);
+            const groups = await db.getData(this.groupsList).then((data:Igroup[]) => {
+                return data;
             });
+            let groupsConnection = await db.getData(this.groupsConnection).then((data:IgroupTable[]) => {
+                return data;
+            });
+            let newList = [];
+            groups.forEach((group: Igroup) => {
+                for(let groupTable of groupsConnection){
+                    if(group.id==groupTable.id && groupTable.type!="user"){
+                        newList.push({id: group.id, name: group.name, type: groupTable.type});
+                    }
+                }
+            });
+            resolve(newList);
         });
     }
 
@@ -41,7 +53,7 @@ export default class Group implements Igroup{
             let list = await db.getData(this.groupsConnection).then((value: IgroupTable[]) => {
                 return value;
             });
-            const index = this.getIndex(parentId,list);
+            const index = this.getIndex(list,parentId);
             if(list[index].type=="empty group" || list[index].type=="containing groups") {
                 list[index].type="containing groups";
                 list.push(groupTableItem);
@@ -50,7 +62,7 @@ export default class Group implements Igroup{
                 groups.push(newGroup);
                 db.setData(this.groupsList, groups);
             }
-            resolve(newGroup);
+            resolve(groups);
         });
     }
 
@@ -102,7 +114,7 @@ export default class Group implements Igroup{
             });
             const index = this.getIndex(groupList,groupId);
             let groupTableElement = list[index];
-            if(groupTableElement.type=="empty group" || groupTableElement.type=="containing groups") {
+            if(groupTableElement.type=="empty group" || groupTableElement.type=="containing users") {
                 console.log(groupTableElement.type);
                 const connectionTableObj: IgroupTable = {id: userId, parent: groupId, type: "user"};
                 list.push(connectionTableObj);
@@ -110,7 +122,7 @@ export default class Group implements Igroup{
                 groupTableElement.type = "containing users";
                 list[index] = groupTableElement;
                 db.setData(this.groupsConnection,list);
-                resolve(connectionTableObj);
+                resolve();
             }
             else{
                 resolve("Can't add User to group")

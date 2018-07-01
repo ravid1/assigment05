@@ -16,6 +16,13 @@ function getGroups(req, res) {
     });
 }
 exports.getGroups = getGroups;
+function createGroup(req, res) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const serviceResult = yield services.getGroups();
+        res.json(serviceResult);
+    });
+}
+exports.createGroup = createGroup;
 function deleteGroup(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         const serviceResult = yield services.deleteGroup(req.body.data);
@@ -25,7 +32,6 @@ function deleteGroup(req, res) {
 exports.deleteGroup = deleteGroup;
 function addGroup(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
-        console.log(req.body);
         const serviceResult = yield services.addGroup(req.body);
         console.log(serviceResult);
     });
@@ -33,7 +39,7 @@ function addGroup(req, res) {
 exports.addGroup = addGroup;
 function addUserToGroup(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
-        console.log(req.body);
+        console.log("controller");
         const serviceResult = yield services.addUserToGroup(req.body);
         console.log(serviceResult);
         res.json(serviceResult);

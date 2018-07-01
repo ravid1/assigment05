@@ -10,7 +10,7 @@ interface IleftPanelProps {
 
 
 interface IleftPanelState {
-    tree?:any,
+    tree?: any,
     user: string
 }
 
@@ -21,7 +21,8 @@ class LeftPanel extends React.Component<IleftPanelProps,IleftPanelState> {
         super(props);
 
         this.state={
-            user: this.props.user
+            user: this.props.user,
+            tree: []
             // ref: null
         }
     }
@@ -34,6 +35,22 @@ class LeftPanel extends React.Component<IleftPanelProps,IleftPanelState> {
         // const tree = stateStoreService.getTree();
         // this.load(tree);
         // this.keysEvent();
+    }
+
+    public shouldComponentUpdate(nextProps:any, nextState:any){
+        console.log("should i update?");
+        console.log(nextProps.tree);
+        console.log(this.props.tree);
+        console.log('should i update? end');
+        if(nextProps.tree!=this.props.tree) {
+            this.clear();
+            const tree = nextProps.tree;
+            this.load(tree);
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public load(items: any) {
@@ -109,7 +126,6 @@ class LeftPanel extends React.Component<IleftPanelProps,IleftPanelState> {
     }
 
     private keysEvent(){
-
         document.addEventListener('keydown',(e)=>{
             switch(e.which){
                 case 13:
@@ -126,6 +142,7 @@ class LeftPanel extends React.Component<IleftPanelProps,IleftPanelState> {
                     break;
                 case 40:
                     this.downKey();
+                    e.stopImmediatePropagation();
                     break;
             }
             e.stopPropagation();
@@ -195,17 +212,18 @@ class LeftPanel extends React.Component<IleftPanelProps,IleftPanelState> {
         this.setStateStore($(element));
     }
 
-    /* private clear() {
-        $('.left').children().remove();
-    } */
+    private clear() {
+        $(this.ref).children().remove();
+    }
 
     private setStateStore(element: any){
-         const msg = $(element).data();
-         stateStoreService.set('messages',msg["messages"]);
-         stateStoreService.set('destination',$(element).text());
+        /*const msg = $(element).data();
+        stateStoreService.set('messages',msg["messages"]);
+        stateStoreService.set('destination',$(element).text());*/
     }
 
     public render() {
+        console.log('left panel render');
         return (
             <div className="leftPanel" >
                 <ul className="tree" tabIndex={0} ref={((element)=>this.ref=element)} />

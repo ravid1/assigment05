@@ -32,13 +32,13 @@ class User {
                 user.id = users[users.length - 1].id + 1;
                 users.push(user);
                 db.setData(this.context, users);
-                resolve(user);
+                resolve(users);
             }
             else {
                 user.id = 1;
                 users.push(user);
                 db.setData(this.context, users);
-                resolve(user);
+                resolve(users);
             }
         }));
     }
@@ -59,7 +59,7 @@ class User {
             });
             db.setData(this.context, users);
             db.setData(this.connectionsList, newUsersConnection);
-            resolve(deletedUser[0]);
+            resolve(users);
         }));
     }
     static updateUser(user) {
@@ -71,7 +71,7 @@ class User {
             const index = this.getIndex(users, user.id);
             users[index] = user;
             db.setData(this.context, users);
-            resolve(user);
+            resolve(users);
         }));
     }
     static getIndex(users, id) {

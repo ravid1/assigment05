@@ -25,6 +25,22 @@ export class Api{
         return this.update('/users',user);
     }
 
+    static getGroups(){
+        return this.get('/groups');
+    }
+
+    static createGroup(obj: Object){
+        return this.post('/groups',obj);
+    }
+
+    static deleteGroup(id: any){
+        return this.delete('/groups',id);
+    }
+
+    static addUserToGroup(obj: Object){
+        return this.post('/groups/user',obj);
+    }
+
     static getTree() {
         return this.get('/tree');
     }
@@ -52,7 +68,9 @@ export class Api{
             headers: {
                 'content-Type': 'application/json'
             }
-        }).then(res => res.json());
+        }).then((res) => (
+            res.json()
+        ));
     }
 
     static update(url: string , body: any) {

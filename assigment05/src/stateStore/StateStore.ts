@@ -8,11 +8,25 @@ class StateStoreService {
     listeners: Function[] =[];
 
     constructor(){
-
+        this.init();
     }
 
     init(){
+        console.log("init");
+        StateStore.getInstance()['showLogin'] = false;
+        StateStore.getInstance()['user'] = null;
 
+        Api.getTree().then((tree) => {
+            console.log('tree here');
+            StateStore.getInstance()['tree'] = tree;
+        });
+        Api.getUsers().then((users) => {
+            StateStore.getInstance()['users'] = users;
+        });
+        Api.getGroups().then((groups) => {
+            StateStore.getInstance()['groups'] = groups;
+            this.onStoreChanged();
+        });
     }
 
     public set(key: string, val: any) {
@@ -33,8 +47,8 @@ class StateStoreService {
         }
     }
     /*================================================= API========================================*/
-    public getTree(){
-        const tree = Api.getTree().then(value => {return value});
+    public async getTree(){
+        const tree = this.get('tree');//= await Api.getTree().then(value => {return value});
         return tree;
     }
 }
@@ -90,5 +104,6 @@ const element = `[
             }
         ]    `;
 stateStoreService.set('tree',JSON.parse(element));
-stateStoreService.set('showLogin',false);
-stateStoreService.set('user',null);
+// stateStoreService.set('showLogin',false);
+// stateStoreService.set('user',null);
+

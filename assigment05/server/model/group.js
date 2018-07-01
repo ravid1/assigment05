@@ -17,9 +17,21 @@ class Group {
     }
     static getGroups() {
         return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {
-            yield db.getData(this.groupsList).then(value => {
-                resolve(value);
+            const groups = yield db.getData(this.groupsList).then((data) => {
+                return data;
             });
+            let groupsConnection = yield db.getData(this.groupsConnection).then((data) => {
+                return data;
+            });
+            let newList = [];
+            groups.forEach((group) => {
+                for (let groupTable of groupsConnection) {
+                    if (group.id == groupTable.id && groupTable.type != "user") {
+                        newList.push({ id: group.id, name: group.name, type: groupTable.type });
+                    }
+                }
+            });
+            resolve(newList);
         }));
     }
     static addGroup(newGroup, parentId) {
@@ -32,7 +44,7 @@ class Group {
             let list = yield db.getData(this.groupsConnection).then((value) => {
                 return value;
             });
-            const index = this.getIndex(parentId, list);
+            const index = this.getIndex(list, parentId);
             if (list[index].type == "empty group" || list[index].type == "containing groups") {
                 list[index].type = "containing groups";
                 list.push(groupTableItem);
@@ -40,7 +52,7 @@ class Group {
                 groups.push(newGroup);
                 db.setData(this.groupsList, groups);
             }
-            resolve(newGroup);
+            resolve(groups);
         }));
     }
     static deleteGroup(id) {
@@ -64,8 +76,9 @@ class Group {
                 return value;
             });
             const index = this.getIndex(groupList, groupId);
+            console.log(index);
             let groupTableElement = list[index];
-            if (groupTableElement.type == "empty group" || groupTableElement.type == "containing groups") {
+            if (groupTableElement.type == "empty group" || groupTableElement.type == "containing users") {
                 console.log(groupTableElement.type);
                 const connectionTableObj = { id: userId, parent: groupId, type: "user" };
                 list.push(connectionTableObj);
@@ -105,18 +118,12 @@ Group.deleteGroups = (id, connectionList, groupList) => __awaiter(this, void 0, 
             return element;
         }
     });
-    console.log("=======================================");
-    console.log(newConnectionList);
-    console.log("=======================================");
     if (!deleteList.length) {
         db.setData(Group.groupsConnection, newConnectionList);
     }
     deleteList.forEach((value) => __awaiter(this, void 0, void 0, function* () {
         yield Group.deleteGroups(value, newConnectionList, groupList);
     }));
-    console.log("++++++++++++++++++++++++++++++++++++++++");
-    console.log(newConnectionList);
-    console.log("++++++++++++++++++++++++++++++++++++++++");
     return groupList;
 });
 exports.default = Group;

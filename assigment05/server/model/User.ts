@@ -39,14 +39,14 @@ export default class User implements Iuser{
                 user.id = users[users.length - 1].id + 1;
                 users.push(user);
                 db.setData(this.context,users);
-                resolve(user);
+                resolve(users);
             }
 
             else{
                 user.id = 1;
                 users.push(user);
                 db.setData(this.context,users);
-                resolve(user);
+                resolve(users);
             }
         });
     }
@@ -68,7 +68,7 @@ export default class User implements Iuser{
             });
             db.setData(this.context,users);
             db.setData(this.connectionsList,newUsersConnection);
-            resolve(deletedUser[0]);
+            resolve(users);
         });
     }
 
@@ -81,7 +81,7 @@ export default class User implements Iuser{
             const index = this.getIndex(users,user.id);
             users[index] = user;
             db.setData(this.context,users);
-            resolve(user);
+            resolve(users);
         });
     }
 
