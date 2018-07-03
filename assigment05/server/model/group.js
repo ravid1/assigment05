@@ -76,7 +76,6 @@ class Group {
                 return value;
             });
             const index = this.getIndex(groupList, groupId);
-            console.log(index);
             let groupTableElement = list[index];
             if (groupTableElement.type == "empty group" || groupTableElement.type == "containing users") {
                 console.log(groupTableElement.type);
@@ -86,7 +85,7 @@ class Group {
                 groupTableElement.type = "containing users";
                 list[index] = groupTableElement;
                 db.setData(this.groupsConnection, list);
-                resolve(connectionTableObj);
+                resolve();
             }
             else {
                 resolve("Can't add User to group");

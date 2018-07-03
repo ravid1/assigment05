@@ -28,20 +28,26 @@ class LeftPanel extends React.Component<IleftPanelProps,IleftPanelState> {
     }
 
     public componentDidMount(){
+        document.addEventListener('keydown',(e)=>{
+            this.keysEvent(e);
+        });
         const tree = stateStoreService.get('tree');
         this.load(tree);
-        this.keysEvent();
+        //this.keysEvent();
 
         // const tree = stateStoreService.getTree();
         // this.load(tree);
         // this.keysEvent();
     }
 
+
+    public componentWillUnmount(){
+        document.addEventListener('keydown',(e)=>{
+            this.keysEvent(e);
+        });
+    }
+
     public shouldComponentUpdate(nextProps:any, nextState:any){
-        console.log("should i update?");
-        console.log(nextProps.tree);
-        console.log(this.props.tree);
-        console.log('should i update? end');
         if(nextProps.tree!=this.props.tree) {
             this.clear();
             const tree = nextProps.tree;
@@ -125,8 +131,8 @@ class LeftPanel extends React.Component<IleftPanelProps,IleftPanelState> {
         $('.active').append(ul);
     }
 
-    private keysEvent(){
-        document.addEventListener('keydown',(e)=>{
+    private keysEvent(e: any){
+        // document.addEventListener('keydown',(e)=>{
             switch(e.which){
                 case 13:
                     this.enterKey();
@@ -146,7 +152,7 @@ class LeftPanel extends React.Component<IleftPanelProps,IleftPanelState> {
                     break;
             }
             e.stopPropagation();
-        });
+        //});
     }
 
     private enterKey() {
@@ -223,7 +229,6 @@ class LeftPanel extends React.Component<IleftPanelProps,IleftPanelState> {
     }
 
     public render() {
-        console.log('left panel render');
         return (
             <div className="leftPanel" >
                 <ul className="tree" tabIndex={0} ref={((element)=>this.ref=element)} />

@@ -37,7 +37,6 @@ function deleteGroup(id) {
 }
 exports.deleteGroup = deleteGroup;
 function addUserToGroup(obj) {
-    console.log("service");
     return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {
         yield model_1.GroupsModel.addUserToGroup(obj.groupId, obj.userId);
     }));

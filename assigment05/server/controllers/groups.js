@@ -39,7 +39,6 @@ function addGroup(req, res) {
 exports.addGroup = addGroup;
 function addUserToGroup(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
-        console.log("controller");
         const serviceResult = yield services.addUserToGroup(req.body);
         console.log(serviceResult);
         res.json(serviceResult);
